@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Resource, Api
 from flask_api import status
 import sqlite3
-from src import db_constants
+import db_constants
 import os
 
 

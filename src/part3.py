@@ -31,7 +31,8 @@ def create_sql_view(df_survey):
 
 
 if __name__ == '__main__':
-    survey_csv = os.path.join('data', 'survey_results_public_2021.csv')
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    survey_csv = os.path.join(dir_path, 'data', 'survey_results_public_2021.csv')
     df_survey = pd.read_csv(survey_csv)
     top_languages_view = create_sql_view(df_survey)
     print(top_languages_view)
