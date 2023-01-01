@@ -1,0 +1,1 @@
+CREATE VIEW TopLanguagesView AS SELECT Country, SUM(CASE WHEN LanguageHaveWorkedWith REGEXP '\bJavaScript\b' THEN 1 END) as 'JavaScript',SUM(CASE WHEN LanguageHaveWorkedWith REGEXP '\bHTML/CSS\b' THEN 1 END) as 'HTML/CSS',SUM(CASE WHEN LanguageHaveWorkedWith REGEXP '\bPython\b' THEN 1 END) as 'Python' FROM survey GROUP BY Country;

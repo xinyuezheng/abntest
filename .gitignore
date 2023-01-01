@@ -1,0 +1,3 @@
+.pytest_cache
+src/.ipynb_checkpoints
+.idea
