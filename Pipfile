@@ -11,6 +11,7 @@ jupyter = "*"
 pandas = "*"
 pytest = "*"
 matplotlib = "*"
+colorama = "*"
 
 [dev-packages]
 
