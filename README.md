@@ -55,4 +55,7 @@ The results can be checked in 'TopLanguagesView' in DB
 
 
 ## Run Tests
-- Go to the root folder and run `PYTHONPATH=$(pwd)/src/ python -m pytest tests`
+From root path:
+
+- For Linux run `PYTHONPATH=$(pwd)/src/ python -m pytest tests`
+- For Windows run `set PYTHONPATH=%cd%\src python -m pytest tests`
