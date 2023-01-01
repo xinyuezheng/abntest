@@ -6,7 +6,7 @@ import sqlite3
 
 @pytest.mark.parametrize(
     "country_code, expected_resp",
-    [("NLD", {"status_code": 200, "response": [{"Age1stCodeYoungest": "Younger than 5 years", "Country Code": "NLD", "Country Name": "Netherlands"}]}),
+    [("NLD", {"status_code": 200, "response": [{"Country Name": "Netherlands", "Country Code": "NLD", "GDP": 57767.8788108173, "Age1stCodeYoungest": "Younger than 5 years"}]}),
      ("InvalidCountryCode", {"status_code": 200, "response": []}), ],
 )
 def test_get_start_coding_age(country_code, expected_resp):

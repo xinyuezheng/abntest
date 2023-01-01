@@ -2,8 +2,8 @@ from flask import Flask
 from flask_restful import Resource, Api
 from flask_api import status
 import sqlite3
-import db_constants
 import os
+import db_constants
 
 
 def _query_db(query_str):
@@ -21,7 +21,7 @@ def _query_db(query_str):
 class StartCodingAge(Resource):
     def get(self, country_code):
         query_str = \
-            f'select "Country Name", "Country Code", "Age1stCodeYoungest" from CountryStartCodingAge where "Country Code"= "{country_code}"'
+            f'select "Country Name", "Country Code", "2021 [YR2021]" as GDP, "Age1stCodeYoungest" from CountryStartCodingAge where "Country Code"= "{country_code}"'
 
         try:
             query_result = _query_db(query_str)
